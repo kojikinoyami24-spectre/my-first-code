@@ -1,0 +1,29 @@
+body {display: flex;
+      margin: 0;
+     justify-content: center;
+     background-color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      align-items: cemter;
+      
+     }
+.card {
+      display: flex;
+      text-align: center;
+      border: none;
+      gap: 5px;
+      border-radius: 13px;
+      padding: 20px;
+      }
+.card a {
+  gap: 2px;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 2s ease;
+}
+.card a:hover {background-color:aqua;
+               box-shadow: 0px 0px 8px aqua;
+              color: blue;}
+

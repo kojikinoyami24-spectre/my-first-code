@@ -1,0 +1,45 @@
+body {display: block;
+     background: azure;}
+.kumpulan {width: 100%;
+          border-radius: 6px;
+          overflow: hidden;
+           column-count: 4;
+           column-gap: 15px;
+           margin:0;
+           max-width: 1200px;
+           grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+           gap: 12px;
+           padding: 20px;
+          }
+.card {overflow: hidden;
+      break-inside: avoid;
+      margin-bottom: 15px;
+      border-radius: 15px;
+      cursor: pointer ;
+      transition: transform 0.5s ease;}
+.card img{width: 100%;
+          height: auto;
+         display: grid;}
+.card:hover {transform: translateY(-5px);
+            box-shadow: 0 8px 20px #00ffcc;}
+@media (max-width:600px) {.kumpulan {column-count: 2;
+                 padding: 10px;
+                 column-gap: 10px;
+                }
+                }
+@media (max-width: 900px) {.kumpulan {column-count: 3;}}
+.kategori {display: flex;
+           text-align: center;
+           border: none;
+           border-radius: 6px;
+           justify-content: center;
+          }
+.kategori a {color: black;
+             text-decoration: none;
+             border-radius: 13px;
+             transition: background-color 0.3s ease;
+             text-align: center;
+            }
+.kategori a:hover {background-color: #00ffcc;
+                  color: white;
+                  text-align: center;}
