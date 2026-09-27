@@ -1,0 +1,17 @@
+body {background-color: hwb(120 76% 10%);
+      background-position: center;
+      }
+h1 {background-color:hwb(88 50% 0%);
+    box-shadow: 3px 4px 4px black;
+    font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+   padding: 10px 20px;}
+a {text-align: center;
+   color: hwb(0 0% 10%);
+   transition: 0.9s ;
+   border: none;
+   box-shadow: 2px 3px 3px black;
+   
+  }
+a:hover {color: blue;
+        }
