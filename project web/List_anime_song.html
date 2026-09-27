@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <title> Anime Music </title>
+    <link rel="stylesheet" href="css/Dasboard.css">
+  </head>
+  <body>
+    <h1> Anime Song </h1>
+    <div class="kointer-player">
+      <div class="piringan-cover">
+        <img src="foto/anime1.jpg" alt="cover-album" class="cover-album" id="coverCD">
+      </div>
+      
+    <h2 id="judulLagu">カワキヲアメク - Kawakiwoameku</h2>
+        
+    <div class="wadah-audio">
+      <audio controls id="audioPlayer">
+        <source src="audio/anime1_audio.mp3" type="audio/mp3" id="sumberAudio">
+      </audio>
+    </div>
+      </div>
+    <hr>
+    <h3>Playlist</h3>
+    <ol>
+      <li onclick="gantiLagu('カワキヲアメク - Kawakiwoameku','foto/anime1.jpg', 'audio/anime1_audio.mp3')">カワキヲアメク - Kawakiwoameku</li>
+      <li onclick="gantiLagu('a cruel angels thesis - yoko takahashi', 'foto/anime2.jpg', 'audio/anime2_audio.mp3')">a cruel angel's thesis - yoko takahashi</li>
+      <li onclick="gantiLagu('Lullaby of the New Moon (I) : Somnias a Luna', 'foto/anime3.jpg', 'audio/anime3_audio.mp3')">Lullaby of the New Moon (I) : Somnias a Luna</li>
+      <li onclick="gantiLagu('Hare Hare ya', 'foto/anime4.jpg', 'audio/anime4_audio.mp3')">Hare Hare ya</li>
+    </ol>
+    <script>
+      function gantiLagu(judul,fileGambar,fileAudio) {
+        //judul lagu
+        document.getElementById("judulLagu").innerHTML= judul;
+        // audio
+        let audio = document.getElementById("audioPlayer");
+        let sumber = document.getElementById("sumberAudio");
+        sumber.src = fileAudio;
+        audio.load();
+        // gambar 
+        document.getElementById("coverCD").src = fileGambar;
+      }
+    </script>
+  </body>
+</html>
