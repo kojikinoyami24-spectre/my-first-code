@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {margin: 0;
+            display: flex;
+            min-height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;}
+      canvas {background: hwb(0 53% 45%);
+              border-radius: 14px;}
+      </style>
+    <title>
+      animation
+    </title>
+  </head>
+  <body>
+    <canvas id="s" width="200" height="500">
+    </canvas>
+    <script>
+      const canvas = document.getElementById("s");
+      const ctx = canvas.getContext("2d");
+
+      let x = 100,  y = 50;
+      let vx = 2,  vy = 1;
+      let r = 20;
+      let speed = 2.567
+
+      function animation() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.beginPath();
+        ctx.arc(x, y, r, 0, Math.PI * 2);
+        ctx.fillStyle = "#00ffcc";
+        ctx.fill();
+
+        x += vx * speed;
+        y += vy * speed;
+
+        if (x + r > canvas.width || x - r < 0) {
+          vx = -vx;
+        }
+        if (y + r > canvas.height || y - r <0 ) {
+          vy = -vy;
+        }
+
+        requestAnimationFrame(animation);
+        
+      }
+      animation();
+      
+    </script>
+  </body>
+</html>
