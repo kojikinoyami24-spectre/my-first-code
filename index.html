@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="utf-8"
-      <meta name="viewport" content="width=davice-width, initial-scale=0">
-    <link rel="stylesheet" href="css/spiner.css">
-    <title>
-      Loading
-    </title>
+    <link rel="stylesheet" href="css/Gork.css">
+    <title> Acount </title>
   </head>
   <body>
-    <div class="spiner"></div>
-    <script>
-      setTimeout(function() {
-        window.location.href = "terestrial.html"
-      }, 3000)
-    </script>
+    <form action="spining.html" method="post">
+      <h2>Create your acount </h2>
+      <p>
+        <label> username: 
+        <input type="text" id ="user" name="name" placeholder="your name..">
+        </label>
+      </p>
+      <p>
+        <label> your email :
+       <input type="email" name="gmail" placeholder="example@gmail.com" id="email">
+        </label>
+      </p>
+      <p>
+        <label> your password: 
+        <input type="password" name="password" placeholder="your password" id="pass">
+        </label>
+      </p>
+      <p>
+        <input type="checkbox" name="box" id="checkbox" required> apakah anda setuju?
+      </p>
+      <p>
+        <input type="submit" name="submit" value="daftar">
+      </p>
+    </form>
   </body>
 </html>
