@@ -54,3 +54,10 @@ ol li {font-family: 'Times New Roman', Times, serif;
 ol li:last-child {border-bottom: none;}
 ol li:hover {color: #0088cc;
             font-weight: bold;}
+canvas {
+  width: 50vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+}
