@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title> PPLG </title>
+  </head>
+  <body>
+    
+<table style="width: 100%;" border="1" cellpadding="17">
+      <tr>
+        <td align="center" colspan="10" bgcolor="blue" style="color: white;"><h3>Modul HTML</h3>
+        <p style="color: yellow;">Sistem pembelajaran</p></td>
+      </tr>
+      <tr>
+        <td>
+          <tittle><h3>Navigasi Modul HTML</h3></tittle>
+          <ul type="disc">
+            <li><strong>1. Elemen & Teks Dasar</strong></li></ol>
+        <ul type = "circle"><li> Tag Heading</li>
+        <li>Paragraf</li>
+        <li>Format Teks</li>
+        </ul>
+        <p><ul type="disc"></ul></p>
+            <li><strong>2. Daftar & Navigasi</strong></li></ol>
+        <ul type = "circle"><li>Ordered list</li>
+        <li>Unordered list</li>
+        <li>Hyperlink</li>
+        </ul>
+        <p><ul type="disc"></ul></p>
+            <li><strong>2. Struktur Tabel</strong></li></ol>
+        <ul type = "circle"><li>baris & sel</li>
+        <li>header tabel</li>
+        <li>colspan & rowspan</li>
+ </ul>
+        <p><ul type="disc"></ul></p>
+            <li><strong>2. Formulir Interaktif</strong></li></ol>
+        <ul type = "circle"><li>input text & password</li>
+        <li>radio & checkbox</li>
+        <li>dropdown & textarea</li>
+
+        </ul>
+        </td>
+        <td>
+          <tittle><h3>Form Input Barang Baru</h3></tittle>
+          <p><label>Kode Barang : </label><input type="text" name="name" placeholder="MNY-001"></p>
+          <label>Nama Mainan : </label><input type="text" name="name" placeholder="Nama Produk">
+          <p><label>Kategori Materi : </label>
+          <select name="Materi ">
+          <option value="-- pilih --">-- Pilih --</option>
+          <option value="Teks Dasar">Teks Dasar</option>
+          <option value="daftar & link">daftar & link</option>
+          <option value="Tabel Html">Tabel Html</option>
+          <option value="Formulir Html">Formulir Html</option>
+          </select></p>
+          <label>Status Stok : </label>
+          <label><input type="radio" name="Status stok" value="Ready">Ready</label>
+          <label><input type="radio" name="Status stok" value="Indent">Indent</label>
+
+          <p><div style="display: flex; align-items: flex-start; gap: 10px;">
+  <label>Fasilitas :</label>
+  <div style="display: flex; flex-direction: column; gap: 5px;">
+    <label><input type="checkbox" name="Garansi 1 Bulan" value="remember"> Garansi 1 Bulan</label>
+    <label><input type="checkbox" name="Free Baterai" value="remember"> Free Baterai</label>
+    <label><input type="checkbox" name="Free Kado" value="remember"> Free Kado</label>
+  </div>
+</div></p>
+<div style="display: flex; align-items: center; gap: 10px;">
+  <label">Harga (RP) : </label>
+  <input type="number" name="number" placeholder="" style="padding: 4px;">
+</div>
+  <p><label>Tgl Masuk : </label>
+  <input type="date" name="Tanggal"></p>
+  <p><label>Catatan : </label>
+<textarea name="biografi"></textarea></p>
+<input type="submit" name="submit" value="Simpan">
+<input type="submit" name="submit" value="Reset">
+</td>
+<td>
+        <table border="1" cellpadding ="17">
+          <tittle><h3>Laporan Stok & Inventaris</h3></tittle>
+          <tr>
+            <th align="center" bgcolor="grey">Kategori</th>
+            <th align="center" bgcolor="grey">Kode</th>
+            <th align="center" bgcolor="grey">Nama Produk</th>
+            <th align="center" bgcolor="grey">Stok</th>
+            <th align="center" bgcolor="grey">Harga</th>
+            <th align="center" bgcolor="grey">Total</th>
+            </tr>
+            <tr>
+              <th align="center" rowspan="2">Edukasi</th>
+              <td align="center">EDK-01</td>
+              <td align="center">Lego Balok 100 Pcs</td>
+              <td align="center">10</td>
+              <td align="center">150rb</td>
+              <td align="center">1.500rb</td>
+            </tr>
+            <tr>
+              <td align="center">EDK-02</td>
+              <td align="center">Puzzle peta indo</td>
+              <td align="center">15</td>
+              <td align="center">50rb</td>
+              <td align="center">750rb</td>
+            </tr>
+            <tr>
+              <th align="center" rowspan="2">Elektronik</th>
+              <td align="center">EDK-01</td>
+              <td align="center">Mobil RC Drift 4WD</td>
+              <td align="center">5</td>
+              <td align="center">350rb</td>
+              <td align="center">1.750rb</td>
+            </tr>
+            <tr>
+              <td align="center">EDK-02</td>
+              <td align="center">Drone Mini Kamera</td>
+              <td align="center">3</td>
+              <td align="center">500rb</td>
+              <td align="center">1.500rb</td>
+            </tr>
+            <tr>
+              <th align="right" bgcolor="grey" colspan="3">TOTAL:</th>
+               <th align="center" bgcolor="grey">33</th>
+               <th align="center" bgcolor="grey">-</th>
+               <th align="center" bgcolor="grey">5.500rb</th>
+            </tr>
+
+          </table>
+        </td>
+
+      </tr>
+
+      
+
+
+  </body>
+</html>
